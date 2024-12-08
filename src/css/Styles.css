@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./../../assets/images/wallpaper.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #5E548E; /* Color morado suave */
+}
+
+h1, h2, h4 {
+    color: #FF6EC7; /* Color rosa pastel */
+}
+
+.text-outline {
+    color: white; /* Color de texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra alrededor del texto para crear un contorno */
+}
+
+/* Sombra en los textos para mayor visibilidad */
+h1, h2, h4, .card-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    color: #5E548E;
+}
+
+.card {
+    border: 1px solid #FFB6C1; /* Rosa claro para los bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #FFFFFF; /* Fondo blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levitar */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 80px; /* Altura de la imagen */
+    width: 130px; /* Ancho de la imagen */
+    margin: 0 auto; /* Centrar la imagen */
+    margin-top: 30px;
+    object-fit: cover; /* Mantiene las imágenes centradas */
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    min-height: 170px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FF6EC7;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #4A4A4A;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFB6C1; /* Rosa pastel */
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD1DC; /* Color más claro cuando pasa el mouse */
+}
+
+/* Buttons and Support Section */
+button, .btn {
+    background-color: #FF6EC7; /* Rosa pastel para los botones */
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #D46B9B; /* Cambio a rosa más oscuro */
+}
+
+/* Right Section */
+.right-section {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* Apilar las secciones */
+    }
+
+    .left-section, .right-section {
+        margin-bottom: 20px;
+        
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .right-section h4 {
+        font-size: 1.1rem;
+    }
+}
+
+.transparent-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+/* Ajustar texto dentro de las cajas */
+.transparent-box h1, .transparent-box p {
+  color: #333; /* Color del texto */
+  margin: 0;
+  text-align: center; /* Alinear el texto al centro */
+}
